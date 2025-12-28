@@ -1,0 +1,18 @@
+<table class="table">
+
+<thead class="table-dark">
+    <tr *ngIf="teams.length > 0">
+        <th>{{ teams[0].teamName }}</th>
+    </tr>
+</thead>
+    <tbody>
+        <tr *ngFor="let tempTeam of teams">
+  <td>
+    <a routerLink="/team/{{tempTeam.franchiseId}}/{{tempTeam.year}}">
+      {{ tempTeam.year.toString().slice(0,4) }}-{{ tempTeam.year.toString().slice(6,8) }}
+              {{tempTeam.teamName}}
+    </a>
+  </td>
+</tr>
+    </tbody>
+</table>

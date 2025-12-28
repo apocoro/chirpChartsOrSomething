@@ -1,0 +1,24 @@
+<!--nav class="navbar text-white bg-dark">
+<h1 class="mt-3 mb-3">Chirp Charts</h1>
+
+</nav>
+-->
+
+<nav class="navbar flex-nowrap navbar-light bg-light px-3">
+  <a class="navbar-brand" href="#">Chirp Charts</a>
+
+  
+    <form class="d-flex ms-auto" (ngSubmit)="onSearch()">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+      [(ngModel)]="searchTerm" name="search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
+
+
+<div class="container"> 
+
+  <router-outlet></router-outlet>
+
+  <!--  <app-team-list></app-team-list> -->
+</div>
