@@ -17,7 +17,6 @@ public class TeamController {
         this.teamRepository = teamRepository;
     }
 
-    // Endpoint for latest team per franchise
     @GetMapping("/team-list")
     public List<Team> getTeamList() {
         return teamRepository.getTeamList();
